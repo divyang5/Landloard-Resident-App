@@ -1,60 +1,65 @@
-Project Title: Rental Property Management App (iOS - SwiftUI)
+# 🏡 Rental Property Management App (iOS - SwiftUI)
 
-Project Overview:
-This project is a mobile application developed for iOS using SwiftUI, designed to facilitate rental property management and browsing. The app supports three types of users: Landlords, Tenants, and Guests. Each user type has specific functionalities tailored to their needs, ensuring a seamless experience for property listing, searching, and management.
+![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue.svg)
+![Firebase](https://img.shields.io/badge/Firebase-Auth%20%7C%20Firestore-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-Key Features:
-Landlord User:
-Landlords can manage their rental properties efficiently through the app. Key functionalities include:
+## 📌 Project Overview
+The **Rental Property Management App** is an iOS application developed using **SwiftUI**, designed to streamline rental property management and browsing. The app provides an intuitive interface for **Landlords, Tenants, and Guests**, ensuring a seamless experience for property listing, searching, and management.
 
-List/De-list Properties: Landlords can add new properties for rent or remove existing ones from the listing.
+## 🚀 Features
+### 👨‍💼 Landlord Features
+- **📌 List/De-list Properties** – Add or remove rental properties.
+- **✏️ Update Property Details** – Modify details like location, price, and amenities.
+- **📩 Receive Requests** – Manage rental requests from tenants.
+- **✅ Approve/Deny Requests** – Accept or reject tenant requests.
+- **🔍 Search Properties** – Browse other rental properties.
+- **ℹ️ View Property Details** – Access comprehensive property information.
 
-Update Property Details: Edit property information such as location, price, amenities, and more.
+### 🏠 Tenant Features
+- **🔍 Search Properties** – Find rental properties with filters (location, price, amenities).
+- **ℹ️ View Property Details** – Access in-depth information about properties.
+- **📌 Shortlist Properties** – Save favorite properties for later.
+- **📩 Send/Withdraw Requests** – Contact landlords or withdraw sent requests.
+- **📤 Share Property Details** – Share listings via external apps.
 
-Receive Requests: Landlords can receive and manage rental requests from tenants.
+### 👤 Guest Features
+- **🔍 Search Properties** – Browse available rental properties.
+- **ℹ️ View Property Details** – Access in-depth information without an account.
 
-Approve/Deny Requests: Accept or reject tenant requests for their properties.
+## 🛠️ Tech Stack & Implementation
+- **📲 UI Framework:** SwiftUI
+- **🔐 Authentication:** FirebaseAuth
+- **📂 Data Storage:** Cloud Firestore
+- **🔄 State Management:** EnvironmentObject, ObservableObject
+- **🛑 Logout:** Secure logout functionality
+- **💾 Remember Me Feature:** UserDefaults for seamless login
 
-Search Properties: Landlords can browse other rental properties in the market.
+## 🔮 Future Enhancements
+- **💳 Payment Gateway Integration** – Secure in-app rental payments.
+- **📩 Push Notifications** – Updates for rental requests and property alerts.
+- **🗺️ Advanced Search & Map View** – Enhanced filtering and map-based browsing.
 
-View Property Details: Access detailed information about any listed property.
+## 📸 Screenshots (Coming Soon...)
 
-Tenant User:
-Tenants can search for and interact with rental properties. Key functionalities include:
+## 🎯 Installation & Setup
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/divyang5/Landloard-Resident-App.git
+   cd rental-property-app
+   ```
+2. **Install Dependencies:**
+   - Ensure Xcode is installed.
+   - Set up Firebase in the project.
+3. **Run the App:**
+   - Open `RentalPropertyApp.xcodeproj` in Xcode.
+   - Build and run on an iOS simulator or device.
 
-Search Properties: Tenants can search for rental properties based on filters like location, price, and amenities.
+## 🤝 Contributing
+Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request.
 
-View Property Details: Access detailed information about any property.
+## 📜 License
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
-Shortlist Properties: Save properties of interest for future reference.
-
-Send/Withdraw Requests: Tenants can send rental requests to landlords or withdraw them if needed.
-
-Share Property Details: Share property information with others via external apps.
-
-Guest User:
-Guests can browse rental properties without creating an account. Key functionalities include:
-
-Search Properties: Browse available rental properties.
-
-View Property Details: Access detailed information about any property.
-
-Technical Implementation:
-User Authentication: FirebaseAuth is used for user authentication. Landlords and tenants can create accounts, and all users can save their login credentials using UserDefaults.
-
-Remember Me Feature: Users can enable the "Remember Me" option to automatically fill in their login credentials upon reopening the app.
-
-User Profiles: Users can view and edit their profiles, including email, name, contact details, and optional payment information. Profile data is stored in Cloud Firestore.
-
-Data Persistence: All user-generated data, including property listings, requests, and profiles, is persisted using Cloud Firestore. Multiple collections or subcollections are used to organize data efficiently.
-
-Navigation: The app uses SwiftUI's navigation mechanisms, leveraging EnvironmentObject and ObservableObject to maintain data consistency across views.
-
-Logout: Users can log out at any time, returning them to the login screen.
-
-Future Enhancements:
-Integration of payment gateways for rental transactions.
-
-Push notifications for request updates and property alerts.
-
-Advanced search filters and map-based property browsing.
+---
+Made with ❤️ by [Divyang]
